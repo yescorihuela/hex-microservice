@@ -14,7 +14,7 @@ import (
 )
 
 func httpPort() string {
-	port := "8081"
+	port := ":8081"
 	if os.Getenv("PORT") != "" {
 		port = os.Getenv("PORT")
 	}
